@@ -26,7 +26,7 @@
 
 /* ---------- RESET ---------- */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-body { font-family: 'Segoe UI', Arial, Helvetica, sans-serif; background: var(--app-bg); color: var(--text); }
+body { font-family: 'Inter', 'Segoe UI', Arial, Helvetica, sans-serif; background: var(--app-bg); color: var(--text); }
 
 /* ---------- APP HEADER ---------- */
 .app-header {
@@ -332,19 +332,6 @@ body { font-family: 'Segoe UI', Arial, Helvetica, sans-serif; background: var(--
   font-size: 12px;
   padding: 5px 8px;
 }
-.bullet-row__highlight {
-  display: flex;
-  align-items: center;
-  gap: 4px;
-  font-size: 11px;
-  color: var(--orange);
-  flex-shrink: 0;
-  white-space: nowrap;
-}
-.bullet-row__highlight input[type="checkbox"] {
-  accent-color: var(--orange);
-}
-
 .add-row-btn {
   font-size: 11px;
   color: var(--orange);
@@ -488,7 +475,7 @@ body { font-family: 'Segoe UI', Arial, Helvetica, sans-serif; background: var(--
   margin-bottom: 18px;
   margin-top: 10px;
   line-height: 1.2;
-  font-family: 'Segoe UI', Arial, sans-serif;
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
 }
 
 /* Paragraph */
@@ -547,13 +534,6 @@ body { font-family: 'Segoe UI', Arial, Helvetica, sans-serif; background: var(--
   line-height: 1.45;
   flex-shrink: 0;
 }
-.doc-bullets li.highlight {
-  color: var(--orange);
-}
-.doc-bullets li.highlight::before {
-  color: var(--orange);
-}
-
 /* Links Box */
 .doc-linksbox {
   border: 1.5px solid #bbb;

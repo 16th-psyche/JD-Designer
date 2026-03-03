@@ -323,7 +323,6 @@ function renderBullets(block) {
   ul.className = 'doc-bullets';
   block.items.forEach(item => {
     const li = document.createElement('li');
-    if (item.highlight) li.classList.add('highlight');
     li.appendChild(document.createTextNode(item.text));
     ul.appendChild(li);
   });
@@ -516,18 +515,6 @@ function buildBlockInputs(block) {
             item.text = val; renderPreview();
           });
 
-          const hlLabel = document.createElement('label');
-          hlLabel.className = 'bullet-row__highlight';
-          const hlCheck = document.createElement('input');
-          hlCheck.type = 'checkbox';
-          hlCheck.checked = item.highlight;
-          hlCheck.addEventListener('change', () => {
-            item.highlight = hlCheck.checked;
-            renderPreview();
-          });
-          hlLabel.appendChild(hlCheck);
-          hlLabel.appendChild(document.createTextNode('orange'));
-
           const delBtn = document.createElement('button');
           delBtn.className = 'btn btn--danger';
           delBtn.textContent = '×';
@@ -538,7 +525,6 @@ function buildBlockInputs(block) {
           });
 
           rowEl.appendChild(textIn);
-          rowEl.appendChild(hlLabel);
           rowEl.appendChild(delBtn);
           itemsWrap.appendChild(rowEl);
         });
