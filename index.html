@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JD Designer — QuantumLeap</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== APP HEADER ===== -->
+  <header class="app-header">
+    <div class="app-header__logo">
+      <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyBpZD0iTGF5ZXJfMiIgZGF0YS1uYW1lPSJMYXllciAyIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMzI4LjU2IDI4NjIuOTYiPgogIDxkZWZzPgogICAgPHN0eWxlPgogICAgICAuY2xzLTEgewogICAgICAgIGZpbGw6ICNmZmM5Mzg7CiAgICAgIH0KICAgIDwvc3R5bGU+CiAgPC9kZWZzPgogIDxnIGlkPSJMYXllcl84IiBkYXRhLW5hbWU9IkxheWVyIDgiPgogICAgPGc+CiAgICAgIDxnPgogICAgICAgIDxwYXRoIGQ9Ik0yNTYyLjc1LDExNjEuNTNjMC00ODcuNzUtMzk1LjQtODgzLjE2LTg4My4xNS04ODMuMTZzLTg4My4xNSwzOTUuNC04ODMuMTUsODgzLjE2YzAsNDYuMTUsMy41NSw5MS40NiwxMC4zNywxMzUuNywyMS41OS0xOS44Niw0Ny43My0zNC44NCw3Ni42OC00My4yLTMuNzktMjkuMDctNS43Ni01OC43MS01Ljc2LTg4LjgxLDAtMzc1LjUxLDMwNC40MS02NzkuOTIsNjc5LjkyLTY3OS45MnM2NzkuOTIsMzA0LjQxLDY3OS45Miw2NzkuOTJjMCwxMzIuNjEtMzcuOTcsMjU2LjM0LTEwMy42MSwzNjAuOTRsLTU3LjE5LTU1LjQ2LTE4NS4yMSwxOTEsNTkuNzcsNTcuOTZjLTExMS4wOSw3OS4wMi0yNDYuOTUsMTI1LjQ5LTM5My42NiwxMjUuNDktMjA4LjkzLDAtMzk1Ljg0LTk0LjIzLTUyMC41Ni0yNDIuNTItMjkuMTgsMTcuODgtNjMuNSwyOC4xOS0xMDAuMjQsMjguMTktMS44NywwLTMuNzMtLjAzLTUuNTktLjA5LDE1Ni4yNCwyNDguNjYsNDMyLjk4LDQxMy45NSw3NDguMzMsNDEzLjk1LDE3Mi4wNiwwLDMzMi42Mi00OS4yMSw0NjguMzktMTM0LjMxbDEzMS4zNywxMjcuNCwxODUuMjEtMTkxLTExNC4yMS0xMTAuNzZjMTMyLjM5LTE1NC40NCwyMTIuMzktMzU1LjEyLDIxMi4zOS01NzQuNDlaIi8+CiAgICAgICAgPGc+CiAgICAgICAgICA8cGF0aCBjbGFzcz0iY2xzLTEiIGQ9Ik05ODguNTgsMTk1NS45OWMtMTE4Ljc3LTEzLjYtMTAyLjI2LTI1Mi42NC04MC4yOC00MDAuOTcsNi44NywxLjI0LDEzLjk0LDEuODksMjEuMTcsMS44OSw2NS4zLDAsMTE4LjI1LTUyLjk1LDExOC4yNS0xMTguMjVzLTUyLjk0LTExOC4yNS0xMTguMjUtMTE4LjI1LTExOC4yNSw1Mi45NS0xMTguMjUsMTE4LjI1YzAsMzguOTcsMTguODYsNzMuNTQsNDcuOTUsOTUuMDgtNjkuNiwxNzkuNjgtMjA0LjE2LDYwMy41NSw0NS42NSw2NjguNTksMTUyLjAzLDM5LjU4LDMxMy44My01MS4zNyw0NzEuNjUtMjExLjYyLTgwLjgyLTI5LjA4LTEzNS45Ny02Mi4yLTE2MC45My03OC43OS03NC4zNSwzNi4xNy0xNTAuMyw1Mi44NS0yMjYuOTYsNDQuMDdaIi8+CiAgICAgICAgICA8cGF0aCBjbGFzcz0iY2xzLTEiIGQ9Ik0yMzg3Ljg1LDBsLTMyNS4xOCwzMjUuMTgsMTY3LjUxLTI0LjY0cy0zODMuODYsMTExMy40OS04NjkuMDIsMTUxNS4zMWM1NS43MywxNi4yOCwxMDYuNTUsMjMuNjQsMTQ1LjQ0LDI2LjgxLDQzNy40Mi01NDkuMSw4MTIuMjctMTUxNy40OSw4MTIuMjctMTUxNy40OWwxMDguNCwxMzMuMDNMMjM4Ny44NSwwWiIvPgogICAgICAgIDwvZz4KICAgICAgPC9nPgogICAgPC9nPgogIDwvZz4KPC9zdmc+" alt="QuantumLeap" />
+      <span>JD Designer</span>
+    </div>
+    <button class="btn-download" id="exportBtn" onclick="window.print()">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+        <path d="M8 1v9M8 10l-3-3M8 10l3-3" stroke="#1C1C1E" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M2 12h12" stroke="#1C1C1E" stroke-width="1.6" stroke-linecap="round"/>
+      </svg>
+      Download PDF
+    </button>
+  </header>
+
+  <!-- ===== MAIN SPLIT PANE ===== -->
+  <main class="app-main">
+
+    <!-- LEFT PANEL: Builder -->
+    <aside class="builder-panel" id="builderPanel">
+
+      <!-- Global settings -->
+      <section class="builder-section">
+        <h3 class="builder-section__title">Page 1 — Cover</h3>
+        <label class="field-label">Job Title</label>
+        <input
+          class="field-input"
+          id="jobTitleInput"
+          type="text"
+          placeholder="e.g. Motion Graphic Designer"
+          value="Motion Graphic Designer"
+        />
+        <div class="font-size-row">
+          <label class="field-label" style="margin:0">Font Size</label>
+          <div class="font-size-controls">
+            <input type="range" id="fontSizeSlider" min="14" max="48" step="1" value="36" class="font-size-slider" />
+            <span id="fontSizeDisplay" class="font-size-display">36px</span>
+            <button id="fontSizeAutoBtn" class="btn btn--auto active" title="Auto-fit: scale to fill available width">Auto</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="builder-section">
+        <h3 class="builder-section__title">Footer URLs (Pages 2+)</h3>
+        <label class="field-label">URL 1</label>
+        <input class="field-input" id="footerUrl1" type="text" value="www.quantumleap.co.in" />
+        <label class="field-label">URL 2</label>
+        <input class="field-input" id="footerUrl2" type="text" value="www.rajivtalreja.com" />
+        <label class="field-label">URL 3</label>
+        <input class="field-input" id="footerUrl3" type="text" value="www.karanhasija.com" />
+      </section>
+
+      <!-- Block list -->
+      <section class="builder-section builder-section--blocks">
+        <h3 class="builder-section__title">Content Blocks</h3>
+        <div id="blockList" class="block-list"></div>
+
+        <!-- Add block dropdown -->
+        <div class="add-block-wrap">
+          <button class="btn btn--add" id="addBlockBtn">+ Add Block</button>
+          <div class="add-block-menu" id="addBlockMenu">
+            <button class="add-block-menu__item" data-type="header">
+              <span class="block-badge block-badge--header">H</span> Section Header
+            </button>
+            <button class="add-block-menu__item" data-type="paragraph">
+              <span class="block-badge block-badge--paragraph">P</span> Paragraph
+            </button>
+            <button class="add-block-menu__item" data-type="infobox">
+              <span class="block-badge block-badge--infobox">I</span> Info / Highlight Box
+            </button>
+            <button class="add-block-menu__item" data-type="bullets">
+              <span class="block-badge block-badge--bullets">B</span> Bullet List
+            </button>
+            <button class="add-block-menu__item" data-type="linksbox">
+              <span class="block-badge block-badge--linksbox">L</span> Links Box
+            </button>
+            <button class="add-block-menu__item" data-type="note">
+              <span class="block-badge block-badge--note">N</span> Note Box
+            </button>
+          </div>
+        </div>
+      </section>
+    </aside>
+
+    <!-- RIGHT PANEL: Preview -->
+    <section class="preview-panel" id="previewPanel">
+      <div class="pages-container" id="pagesContainer">
+        <!-- Page 1: SVG Cover -->
+        <div class="page page--cover" id="coverPage">
+          <div class="page__svg-wrap" id="svgWrap">
+            <div class="svg-loading">Loading cover design…</div>
+          </div>
+        </div>
+        <!-- Pages 2+ rendered by JS -->
+      </div>
+    </section>
+
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
